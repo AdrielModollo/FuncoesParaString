@@ -16,7 +16,11 @@ $email5= "g_santana";
 $email6= "i_nunes";
 $email7= "h_manfre";
 
-$provedor = "@empresax.com.br";
+$primeiraLetra = $nome1[0];
+$ultimoNome = substr($nome1, strrpos($nome1, ' ') + 1);
+$provedor = '@empresax.com.br';
+
+$juncaoEmail1 = strtolower($primeiraLetra . '_' .  $ultimoNome . $provedor);
 
 
 /* Exemplo de como chamar variáveis
@@ -36,7 +40,7 @@ echo "$a $hello";
     </tr>
     <tr>
     <td><?php echo "$nome1"; ?></td>
-    <td><?php echo "$email1$provedor";?></td>
+    <td><?php echo "$juncaoEmail1";?></td>
     </tr>
     <tr>
     <td><?php echo "$nome2"; ?></td>
