@@ -1,6 +1,6 @@
 <?php
 
-$nome = 'aNA rITA dE cASSIA sILVA oLIVEIRA';
+$nome = "aNA rITA dE cASSIA sILVA oLIVEIRA";
 $nome1= 'cARLINDO dOS sANTOS aRAUJO';
 $nome2= "vANGELI sANDRA fEITOZA rAMOS";
 $nome3= "jOSE eDIMILSON pEREIRA";
@@ -12,7 +12,6 @@ $emailSufixo = '@empresax.com.br';
 
 function converteNome($nome) {
     $nome = ucwords(strtolower($nome));
-
     return ($nome);
 
   
@@ -22,6 +21,7 @@ function converteNomeParaEmail($nome, $emailSufixo) {
   $primeiraLetra = $nome[0];
   // $nome[0] pega o primeiro caracter da variável $nome
   $ultimaParte = substr($nome, strrpos($nome, ' ') + 1);
+  
   // substr é uma função com 2 parametros
   // o primeiro parametro é a string
   // e o segundo é a partir de qual indice eu quero a string
