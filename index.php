@@ -1,5 +1,7 @@
 <?php
 
+//funções de string
+
 function converterNomeParaEmail($nome) {
     //Explode divide uma string em strings, note que ' ' possuí um espaço para separação das palavras dentro da váriavel $nome
     $partesDoNome = explode(' ', $nome);
@@ -26,6 +28,7 @@ function formatacaoDoNome($nome){
             // array_push adiciona um ou mais elemento no final de um array
             array_push($parteNova, strtolower($parte));
         } else {
+            //funções de tratamento de strings
             //strtoupper letras será exibidas em maiúscula
             $primeiraLetraConvertidaParaMaiuscula = strtoupper($partes[0]);
             //substr retorna parte de uma string, no casa ($parte, 1)
@@ -76,3 +79,4 @@ $html .= '</table>';
 echo $html;
 
 ?>
+
