@@ -20,7 +20,7 @@ function converteNome($nome) {
 function converteNomeParaEmail($nome, $emailSufixo) {
   $primeiraLetra = $nome[0];
   // $nome[0] pega o primeiro caracter da variável $nome
-  $ultimaParte = substr($nome, strrpos($nome, ' ') + 1);
+  $ultimoNome= substr($nome, strrpos($nome, ' ') + 1);
   
   // substr é uma função com 2 parametros
   // o primeiro parametro é a string
@@ -39,7 +39,7 @@ function converteNomeParaEmail($nome, $emailSufixo) {
   // Camelo -> strrpos('Camelo', 'mel') -> retorno 2 (indice 2)
 
 
-  return strtolower($primeiraLetra . '_' . $ultimaParte . $emailSufixo);
+  return strtolower($primeiraLetra . '_' . $ultimoNome . $emailSufixo);
 }
 
 //var_dump(converteNomeParaEmail($nome, $emailSufixo));
