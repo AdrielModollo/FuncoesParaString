@@ -24,7 +24,7 @@ function formatacaoDoNome($nome){
         //in_array checa se o valor existe em uma array
         if (in_array($partes, $preposicoes)) {
             // array_push adiciona um ou mais elemento no final de um array
-            array_push($parteNova, strtolower($parte));
+            array_push($parteNova, strtolower($partes));
         } else {
             //strtoupper letras será exibidas em maiúscula
             $primeiraLetraConvertidaParaMaiuscula = strtoupper($partes[0]);

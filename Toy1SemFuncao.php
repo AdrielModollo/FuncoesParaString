@@ -8,13 +8,13 @@ $nome5=  "GILMARA ARAUJO SANTANA";
 $nome6=  "IBERTO GALDINO NUNES";
 $nome7=  "HELENICE FELICIANO MANFRE";
 
-$email1= "a_oliveira";
 $email2= "c_araujo";
 $email3= "v_ramos";
 $email4= "j_pereira";
 $email5= "g_santana";
 $email6= "i_nunes";
 $email7= "h_manfre";
+
 
 $primeiraLetra = $nome1[0];
 $ultimoNome = substr($nome1, strrpos($nome1, ' ') + 1);
